@@ -1,0 +1,88 @@
+:root {
+    --pallette-bg-light: #2e294f;
+    --pallette-bg-light-accent: #39325e;
+    --pallette-bg-dark: #262141;
+    --pallette-bg-dark-accent: #302950;
+    --pallette-font-primary: #c4c1c9;
+    --pallette-font-secondary: #776da4;
+    --pallette-font-accent: #7abab6;
+
+    --accent-2: #d24d5a;
+    --accent-3: #f5efcf;
+    --accent-4: #ca9bf7;
+}
+
+/* body {
+    font-family: 'Roboto Mono', monospace;
+} */
+
+/* ========== [///// FONTS /////] ========== */
+.bold {
+    font-weight: 700 !important;
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 6px;
+}
+
+.font-roboto {
+    font-family: 'Roboto', monospace;
+}
+
+.font-roboto-mono {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* ========== [///// COLORS /////] ========== */
+/* ----- special accent colors ----- */
+.ca-2 {
+    color: var(--accent-2);
+}
+
+.ca-3 {
+    color: var(--accent-3);
+}
+
+.ca-4 {
+    color: var(--accent-4);
+}
+
+/* ----- font colors ----- */
+.color-primary {
+    color: var(--pallette-font-primary);
+}
+
+.color-secondary {
+    color: var(--pallette-font-secondary);
+}
+
+.color-accent {
+    color: var(--pallette-font-accent);
+}
+
+/* ----- background colors ----- */
+.color-bg-dark {
+    background: var(--pallette-bg-dark);
+}
+
+.color-bg-dark-accent {
+    background: var(--pallette-bg-dark-accent);
+}
+
+.color-bg-light {
+    background: var(--pallette-bg-light);
+}
+
+.color-bg-light-accent {
+    background: var(--pallette-bg-light-accent);
+}
+
+
+/* ========== [///// LANDING /////] ========== */
+#landing {
+    background: url(./w.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
