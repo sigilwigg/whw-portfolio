@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== [///// META /////] ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ========== [///// CDNs /////] ========== -->
+    <!-- ----- bootstrap ----- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ----- google fonts ----- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <!-- ========== [///// CSS /////] ========== -->
+    <link rel="stylesheet" href="../style.css">
+
+    <title>Wyatt Howard Williams</title>
+</head>
+
+<body>
+
+    <div id="workout-page" class="page color-bg-dark">
+        <section id="workout-landing" class="color-secondary container px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-10 col-sm-8 col-lg-6 mx-auto">
+                    <img src="../images/lightkeeper/lightkeeper_modern-shadows.gif"
+                        class="rounded d-block mx-lg-auto img-fluid" alt="the light keeper at night" width="700"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold color-primary lh-1 mb-5">LightKeeper</h1>
+                    <p class="lead mb-3 color-accent"><b class="fw-bold color-primary">The Concept: </b>A short game
+                        about a person
+                        with a lantern.</p>
+                    <p class="lead mb-3">A handful of
+                        shrines around a small farming village need to bit lit every night or else the spirits will
+                        become restless! Use the lantern to find your way through the dark and light the shrines of
+                        village loved-ones.</p>
+
+                    <p class="lead mb-3 color-accent"><b class="fw-bold color-primary">The Project: </b>Use HTML, CSS,
+                        and plain
+                        Javascript
+                        (without any
+                        pre-built
+                        libraries) to build a top-down game.</p>
+                    <p class="lead mb-3">Cute original pixel art (made by yours truely and inspired
+                        by ___), a custom tiling engine, collisions, and a custom lighting system are all part of what
+                        makes this
+                        little unfinished game special to me!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lightkeeper-animations" class="color-secondary container px-4 py-5">
+            <div class="row flex-lg-row align-items-center g-5">
+                <div class="col-10 col-sm-4 mx-auto">
+                    <img src="../images/lightkeeper/lightkeeper_modern-shadows_walking.gif"
+                        class="rounded d-block mx-lg-auto img-fluid" alt="example of custom dynamic pixel-art lighting"
+                        width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-sm-8 text-end">
+                    <h2 class="color-primary my-4">Sprite-Based Animations</h2>
+                    <p class="lead">The player is animated using some clever CSS and a well-organized sprite-sheet. Each
+                        row of the sheet is a different frame of animation, and each row is the same animation but with
+                        the character facing a different direction. By hiding the overflow of the image, we hide any
+                        unused aniamtion frames.</p>
+                    <p class="lead">Imagine a flip-book. In a flip-book, the frames of animation are "stored"
+                        vertically, and by flipping the pages you move vertically down the stack, causing an animation
+                        to play. To animate our player, we "flip" through each column of our sprite sheet horizontaly -
+                        like a fast comic strip. Because each row is a different animation (walking up, walking left,
+                        standing right) we can seamlesly transition to a new animation by "fliping" to a new row!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="lightkeeper-tilemap" class="color-secondary container px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5">
+                <div class="col-10 col-sm-4 mx-auto">
+                    <img src="../images/lightkeeper/lightkeeper_graveyard.png"
+                        class="rounded d-block mx-lg-auto img-fluid" alt="custom tile map example" width="700"
+                        height="500" loading="lazy">
+                </div>
+                <div class="col-sm-8">
+                    <h2 class="color-primary my-4">Custom Tile-Map Engine</h2>
+                    <p class="lead">I created and optimized a method for rendering hundreds of .png images in a grid
+                        without slowing your web browser to a crawl. It features multiple layers for rendering the
+                        ground, lighting, and even objects that the player can appear to walk behind!</p>
+                    <p class="lead">The tilemap is interactable with a simple API that manages what tiles go where. This
+                        is used for checking which tiles on the lighting layer need to be animated based on distance
+                        from the player.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+<!-- ========== [///// SCRIPTS /////] ========== -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+</html>
