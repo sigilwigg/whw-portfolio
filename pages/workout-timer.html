@@ -32,30 +32,24 @@
         <section id="workout-landing" class="color-secondary container px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5">
                 <div class="col-10 col-sm-8 col-lg-6 mx-auto">
-                    <img src="../images/lightkeeper/lightkeeper_modern-shadows.gif"
-                        class="rounded d-block mx-lg-auto img-fluid" alt="the light keeper at night" width="700"
-                        height="500" loading="lazy">
+                    <img src="../images/workout/main.gif" class="rounded d-block mx-lg-auto img-fluid"
+                        alt="the workout timer app" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
-                    <h1 class="display-5 fw-bold color-primary lh-1 mb-5">LightKeeper</h1>
-                    <p class="lead mb-3 color-accent"><b class="fw-bold color-primary">The Concept: </b>A short game
-                        about a person
-                        with a lantern.</p>
-                    <p class="lead mb-3">A handful of
-                        shrines around a small farming village need to bit lit every night or else the spirits will
-                        become restless! Use the lantern to find your way through the dark and light the shrines of
-                        village loved-ones.</p>
+                    <h1 class="display-5 fw-bold color-primary lh-1 mb-5">Workout Timer</h1>
+                    <p class="lead mb-3 color-accent"><b class="fw-bold color-primary">The Concept: </b>Make workouts,
+                        select exercises, change reps, time yourself, and get fit!</p>
+                    <p class="lead mb-3">An app to help users design workouts with fine detail and then time their reps,
+                        laps, sessions - all at once! The app allows for customizing your reps, rest time, and more.</p>
 
-                    <p class="lead mb-3 color-accent"><b class="fw-bold color-primary">The Project: </b>Use HTML, CSS,
-                        and plain
-                        Javascript
-                        (without any
-                        pre-built
-                        libraries) to build a top-down game.</p>
-                    <p class="lead mb-3">Cute original pixel art (made by yours truely and inspired
-                        by ___), a custom tiling engine, collisions, and a custom lighting system are all part of what
-                        makes this
-                        little unfinished game special to me!</p>
+                    <p class="lead mb-3 color-accent"><b class="fw-bold color-primary">The Project: </b>React-Redux
+                        Frontend, a Restful API made with Hapi.js(express.js adjacent) on backend, and a PostgreSQL
+                        database</p>
+                    <p class="lead mb-3">I created this app to show off my Node.js abilities. The infinite carousel
+                        makes use of some pretty awesome state management and
+                        clever code to keep it lightweight, adaptable, and flexible. The app posts database changes to
+                        user's workouts asynchronously and in real time for a really nice user experience. The backend
+                        makes use of features like tokenization and request schema to keep data secure.</p>
                 </div>
             </div>
         </section>
@@ -63,21 +57,19 @@
         <section id="lightkeeper-animations" class="color-secondary container px-4 py-5">
             <div class="row flex-lg-row align-items-center g-5">
                 <div class="col-10 col-sm-4 mx-auto">
-                    <img src="../images/lightkeeper/lightkeeper_modern-shadows_walking.gif"
-                        class="rounded d-block mx-lg-auto img-fluid" alt="example of custom dynamic pixel-art lighting"
-                        width="700" height="500" loading="lazy">
+                    <img src="../images/workout/code-block.png" class="rounded d-block mx-lg-auto img-fluid"
+                        alt="a block of code from the app" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-sm-8 text-end">
-                    <h2 class="color-primary my-4">Sprite-Based Animations</h2>
-                    <p class="lead">The player is animated using some clever CSS and a well-organized sprite-sheet. Each
-                        row of the sheet is a different frame of animation, and each row is the same animation but with
-                        the character facing a different direction. By hiding the overflow of the image, we hide any
-                        unused aniamtion frames.</p>
-                    <p class="lead">Imagine a flip-book. In a flip-book, the frames of animation are "stored"
-                        vertically, and by flipping the pages you move vertically down the stack, causing an animation
-                        to play. To animate our player, we "flip" through each column of our sprite sheet horizontaly -
-                        like a fast comic strip. Because each row is a different animation (walking up, walking left,
-                        standing right) we can seamlesly transition to a new animation by "fliping" to a new row!</p>
+                    <h2 class="color-primary my-4">Best Practices All Around</h2>
+                    <p class="lead">I am a stickler for well-organized code! I want anyone looking at my work
+                        to know exactly what their looking at and how it works. Solid naming conventions, good
+                        commenting practices, and clear seperation of concerns make every block of code pleasant to work
+                        with - and easy to modify!</p>
+                    <p class="lead">Everything in the app is
+                        coded with functional design in mind for maximum scalability, well organized and single-service
+                        components, and super nice readability. The whole thing is coded that exact same as you would
+                        for an enterprise-level application.</p>
                 </div>
             </div>
         </section>
@@ -85,15 +77,12 @@
         <section id="lightkeeper-tilemap" class="color-secondary container px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5">
                 <div class="col-10 col-sm-4 mx-auto">
-                    <img src="../images/lightkeeper/lightkeeper_graveyard.png"
-                        class="rounded d-block mx-lg-auto img-fluid" alt="custom tile map example" width="700"
-                        height="500" loading="lazy">
+                    <img src="../images/workout/timer.gif" class="rounded d-block mx-lg-auto img-fluid"
+                        alt="custom tile map example" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-sm-8">
-                    <h2 class="color-primary my-4">Custom Tile-Map Engine</h2>
-                    <p class="lead">I created and optimized a method for rendering hundreds of .png images in a grid
-                        without slowing your web browser to a crawl. It features multiple layers for rendering the
-                        ground, lighting, and even objects that the player can appear to walk behind!</p>
+                    <h2 class="color-primary my-4">Timer, CountDown, Pause, Lap - Oh My!</h2>
+                    <p class="lead">The timer is a fun example of implimenting a complex component </p>
                     <p class="lead">The tilemap is interactable with a simple API that manages what tiles go where. This
                         is used for checking which tiles on the lighting layer need to be animated based on distance
                         from the player.</p>
