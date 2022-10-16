@@ -29,10 +29,13 @@
 <body>
 
     <div id="workout-page" class="page color-bg-dark">
-        <section id="workout-landing" class="color-secondary container px-4 py-5">
+        <section id="workout-landing" class="color-secondary container px-4 pb-5 pt-2">
+            <a href="./index.html">
+                <img src="./images/left-arrow.svg" aria-hidden="true" width="75" height="75" class="arrow-filter mb-3">
+            </a>
             <div class="row flex-lg-row-reverse align-items-center g-5">
                 <div class="col-10 col-sm-8 col-lg-6 mx-auto">
-                    <img src="../images/workout/main.gif" class="rounded d-block mx-lg-auto img-fluid"
+                    <img src="./images/workout/main.gif" class="rounded d-block mx-lg-auto img-fluid"
                         alt="the workout timer app" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-lg-6">
@@ -54,10 +57,10 @@
             </div>
         </section>
 
-        <section id="lightkeeper-animations" class="color-secondary container px-4 py-5">
+        <section id="workout-code" class="color-secondary container px-4 py-5">
             <div class="row flex-lg-row align-items-center g-5">
                 <div class="col-10 col-sm-4 mx-auto">
-                    <img src="../images/workout/code-block.png" class="rounded d-block mx-lg-auto img-fluid"
+                    <img src="./images/workout/code-block.png" class="rounded d-block mx-lg-auto img-fluid"
                         alt="a block of code from the app" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-sm-8 text-end">
@@ -74,18 +77,39 @@
             </div>
         </section>
 
-        <section id="lightkeeper-tilemap" class="color-secondary container px-4 py-5">
+        <section id="workout-timer" class="color-secondary container px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5">
                 <div class="col-10 col-sm-4 mx-auto">
-                    <img src="../images/workout/timer.gif" class="rounded d-block mx-lg-auto img-fluid"
+                    <img src="./images/workout/timer.gif" class="rounded d-block mx-lg-auto img-fluid"
                         alt="custom tile map example" width="700" height="500" loading="lazy">
                 </div>
                 <div class="col-sm-8">
                     <h2 class="color-primary my-4">Timer, CountDown, Pause, Lap - Oh My!</h2>
-                    <p class="lead">The timer is a fun example of implimenting a complex component </p>
-                    <p class="lead">The tilemap is interactable with a simple API that manages what tiles go where. This
-                        is used for checking which tiles on the lighting layer need to be animated based on distance
-                        from the player.</p>
+                    <p class="lead">The timer is a fun example of implimenting a complex timer component with multiple
+                        functionalities. The timer can be stopped, started, and paused - it can also be used for rest
+                        countdowns and tracking smaller timeframes within a larger one. This allows for timing
+                        individual groups of reps or rounds while also timing the whole workout.</p>
+                    <p class="lead">Finally, all of these datapoints are recorded and stored away in a database for
+                        later displaying in the "view times" section. In the future I would love to make use of some
+                        special graph-rendering techniques (which I learned from making a stock indicator's analysis
+                        tool) to display the users fitness progress!</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="workout-carousel" class="color-secondary container px-4 py-5">
+            <div class="row flex-lg-row align-items-center g-5">
+                <div class="col-10 col-sm-4 mx-auto">
+                    <img src="./images/workout/search-2.gif" class="rounded d-block mx-lg-auto img-fluid"
+                        alt="a block of code from the app" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-10 col-sm-4 mx-auto">
+                    <img src="./images/workout/carousel.png" class="rounded d-block mx-lg-auto img-fluid"
+                        alt="a block of code from the app" width="700" height="500" loading="lazy">
+                </div>
+                <div class="col-10 col-sm-4 mx-auto">
+                    <img src="./images/workout/creating-workout.gif" class="rounded d-block mx-lg-auto img-fluid"
+                        alt="a block of code from the app" width="700" height="500" loading="lazy">
                 </div>
             </div>
         </section>

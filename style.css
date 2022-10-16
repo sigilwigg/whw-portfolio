@@ -42,7 +42,7 @@
 }
 
 .img-box:hover img {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .img-box:hover .middle {
@@ -74,6 +74,15 @@
 
 
 /* #region ========== [///// COLORS /////] ========== */
+.arrow-filter {
+    filter: invert(78%) sepia(82%) saturate(376%) hue-rotate(88deg) brightness(100%) contrast(104%);
+    transition: 400ms ease-in-out;
+}
+
+.arrow-filter:hover {
+    filter: invert(86%) sepia(25%) saturate(205%) hue-rotate(5deg) brightness(107%) contrast(92%);
+}
+
 /* ----- special accent colors ----- */
 .ca-2 {
     color: var(--accent-2);
